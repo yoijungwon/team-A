@@ -22,7 +22,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
 
 def cash_deficit():
     """
-    Find all the days which has cash deficit happened, and the amount.
+    Find all the days which has cash deficit happened, and calculate the amount.
     Parameters are not required.
     """
 
@@ -30,8 +30,8 @@ def cash_deficit():
     day_list = []   # store all the days from 0 to 90.
     cash_diff_list = []   #to store the difference in cash on hand between the present day and the previous day
     index_list = []   #to store the index of the difference in cash on hand from cash_diff_List to flag out the days with cash deficit
-    cash_deficit_list = [] #create a list to store the negative value. 
-    # Note: negative value means the value is a cash deficit.
+    cash_deficit_list = [] #create a list to store the difference in cash on hand if the current day is lower than the previous day.
+    # Note: negative value in cash_deficit_list means the value is a cash deficit.
 
     for item in cash_on_hand:
         #iterate each row of data in cash_on_hand list

@@ -23,15 +23,15 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
 
 def profit_deficit():
     """
-    Find all the days which has profit deficit happened, and the amount.
+    Find all the days which has profit deficit happened, and calculate the amount.
     Parameters are not required.
     """
     value = [] #create a value list to store all the net profit
     day_list = [] #create a list to store all the days from 0 to 90.
     diff_list = [] #create a list to store the amount difference of net profit between the present day and the previous day
     amount_index = [] #create a list to store the index of the negative value to find out the days with profit deficit 
-    day_amount_list = [] #create a list to store the negative value. 
-    # Note: negative value means the value is a profit deficit.
+    day_amount_list = [] #create a list to store the difference in net profit if the current day is lower than the previous day.
+    # Note: negative value in day_amount_list means the value is a profit deficit.
     
     for item in profit_and_loss:
         #iterate each row of data in profit_and_loss list
