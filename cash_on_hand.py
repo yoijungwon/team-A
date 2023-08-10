@@ -1,7 +1,7 @@
 from pathlib import Path
 import csv
 
-#create a file to csv file.
+#create a file to csv file 
 fp = Path.cwd()/"csv_reports"/"cash_on_hand.csv"
 
 #read the csv file to append day and cash on hand from the csv.
@@ -18,7 +18,7 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         #and append to cash_on_hand list
         cash_on_hand.append([row[0], row[1]])
 
-# print(cash_on_hand)
+# print (cash_on_hand)
 
 def cash_deficit():
     """
