@@ -32,7 +32,7 @@ def highest_oh():
         #iterate each row of data in overheads list
         #typecast overheads into floats
         item[1] = float(item[1])
-        if item[1] > maximum: #check if item is larger than zero (maximum)
+        if item[1] > maximum: #check if item is larger than maximum
             maximum = item[1] #assign the highest overhead from the overheads list to maximum
             category += item[0] #add the highest overhead's category into list
     
