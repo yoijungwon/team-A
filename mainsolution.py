@@ -8,9 +8,3 @@ overheads.highest_oh()
 cash_on_hand.cash_deficit()
 profit_and_loss.profit_deficit()
 
-    
-
-
-
-
-
